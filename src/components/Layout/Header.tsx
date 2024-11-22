@@ -18,7 +18,7 @@ const Header = () => {
             }`
           )}
         >
-          <div className="w-[50px] h-[50px] rounded-full bg-orange-500 overflow-hidden">
+          <div className="w-[50px] h-[50px] rounded-full bg-[#ffc107] overflow-hidden">
             <Image
               src="/logo.svg"
               alt="logo"

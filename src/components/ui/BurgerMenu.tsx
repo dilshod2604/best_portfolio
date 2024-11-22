@@ -23,7 +23,7 @@ const BurgerMenu = () => {
       )}
     >
       Menu
-      <div className="w-[45px] h-[45px] rounded-full bg-orange-400">
+      <div className="w-[45px] h-[45px] rounded-full bg-[#ffc107]">
         <IconButton
           className="w-full h-full flex items-center justify-center"
           id="basic-button"
@@ -64,7 +64,7 @@ const BurgerMenu = () => {
                 "&:hover": {
                   backgroundColor: theme === "light" ? "#f0f0f0" : "#333",
                   color: theme === "light" ? "black" : "white",
-                  outline: "2px solid #03a9f4",
+                  outline: "2px solid #ffc107",
                   borderRadius: "4px",
                 },
               }}

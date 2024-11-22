@@ -1,7 +1,12 @@
 import React from "react";
+import Welcome from "./HomePageSections/Welcome";
 
 const HomePage = () => {
-  return <React.Fragment></React.Fragment>;
+  return (
+    <React.Fragment>
+      <Welcome />
+    </React.Fragment>
+  );
 };
 
 export default HomePage;
