@@ -1,5 +1,4 @@
 "use client";
-import { hobbies } from "@/constants/tools";
 import { useThemeStore } from "@/store/useThemeButton";
 import Image from "next/image";
 import React from "react";
@@ -7,6 +6,7 @@ import { twMerge } from "tailwind-merge";
 import avatar from "../../../assets/avatar.svg";
 import Link from "next/link";
 import { IoIosPhonePortrait } from "react-icons/io";
+import { hobbies } from "@/constants/tools";
 
 const About = () => {
   const { theme } = useThemeStore();
@@ -41,8 +41,9 @@ const About = () => {
                 </h1>
               </div>
               <div className="flex flex-wrap max-w-[500px] gap-x-2 gap-y-4">
-                {hobbies.map((hobby) => (
+                {hobbies.map((hobby, index) => (
                   <span
+                    key={index}
                     className={twMerge(
                       `px-4 py-2  rounded-full text-blue-700  font-bold text-2xl`,
                       theme === "light" ? "bg-[#ffc107]" : "bg-white"
@@ -61,7 +62,7 @@ const About = () => {
                 )}
               >
                 <p className="text-bold font-black text-[40px] text-[#ffc107]">
-                  4.7+
+                  1.5+
                 </p>
                 <p className="text-center font-bold text-[30px]">
                   Years Experience
@@ -74,7 +75,7 @@ const About = () => {
                 )}
               >
                 <p className="text-bold font-black text-[40px] text-[#ffc107]">
-                  20+
+                  10+
                 </p>
                 <p className="text-center ` font-bold text-[30px]">
                   Project Completed

@@ -41,14 +41,14 @@ const Welcome = () => {
                   Expert frontend developer {"  "}{" "}
                 </span>
                 with{" "}
-                <span className="font-black text-[#ffc107]">4.7+ Years</span> of
+                <span className="font-black text-[#ffc107]">1.5+ Years</span> of
                 expertise in ReactJS and NextJS. I create responsive,
                 user-centric web applications.
               </p>
             </span>
           </div>
           <div className="flex items-center gap-x-4 max-sm:flex-col max-sm:gap-y-4">
-            <button className="flex items-center gap-x-4 px-[40px] py-4  text-2xl text-[#ffc107] font-bold border border-[#ffc107]   rounded-full bg-[#ffc107]/10 hover:bg-[#ffc107] hover:text-black transition-all ">
+            <button className="flex items-center gap-x-4 px-[40px] py-4  text-2xl text-[#ffc107] font-bold border border-[#ffc107] rounded-full bg-[#ffc107]/10 hover:bg-[#ffc107] hover:text-black transition-all ">
               <BsDownload size={30} />
               Download CV
             </button>

@@ -16,9 +16,9 @@ const BurgerMenu = () => {
     setAnchorEl(null);
   };
   return (
-    <button
+    <div
       className={twMerge(
-        `flex items-center justify-between h-[50px] w-[140px] rounded-full pl-4  pr-1 font-bold text-xl`,
+        `flex items-center justify-between h-[50px] w-[140px] rounded-full pl-4  pr-1 font-bold text-xl cursor-pointer`,
         "bg-[var(--bg-color)] text-[var(--text-color)]"
       )}
     >
@@ -74,7 +74,7 @@ const BurgerMenu = () => {
           ))}
         </Menu>
       </div>
-    </button>
+    </div>
   );
 };
 
