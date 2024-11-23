@@ -9,6 +9,7 @@ import next from "../../assets/next-js.svg";
 import typescript from "../../assets/typescript.svg";
 import javascript from "../../assets/logo-javascript.svg";
 import antd from "../../assets/ant-design.svg";
+import tailwind  from "../../assets/pngwing.com.png"
 
 const MyImage = () => {
   const { theme } = useThemeStore();
@@ -139,8 +140,8 @@ const MyImage = () => {
         )}
       >
         <Image
-          src={""}
-          alt=""
+          src={tailwind}
+          alt="tailwind"
           width={40}
           height={40}
           className="rounded-full"

@@ -1,6 +1,7 @@
 import MyImage from "@/components/ui/MyImage";
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import { BsDownload } from "react-icons/bs";
 
 const Welcome = () => {
   return (
@@ -47,10 +48,11 @@ const Welcome = () => {
             </span>
           </div>
           <div className="flex items-center gap-x-4 max-sm:flex-col max-sm:gap-y-4">
-            <button className="flex items-center justify-between px-[40px] py-4  text-2xl font-bold border border-[#ffc107]   rounded-full bg-[#ffc107]/10 hover:bg-[#ffc107] transition-all ">
+            <button className="flex items-center gap-x-4 px-[40px] py-4  text-2xl text-[#ffc107] font-bold border border-[#ffc107]   rounded-full bg-[#ffc107]/10 hover:bg-[#ffc107] hover:text-black transition-all ">
+              <BsDownload size={30} />
               Download CV
             </button>
-            <button className="flex items-center justify-between px-[40px] py-4  text-2xl font-bold border border-[#ffc107]  rounded-full bg-[#ffc107]/10 hover:bg-[#ffc107] transition-all ">
+            <button className="flex items-center justify-between px-[40px] py-4  text-2xl text-black font-bold border border-[#ffc107]  rounded-full bg-[#ffc107] hover:bg-[#ffc107]/10 hover:text-[#ffc107] transition-all ">
               Hire Me
             </button>
           </div>
