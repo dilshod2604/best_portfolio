@@ -41,7 +41,7 @@ const Projects = () => {
                     <Image
                       src={item.image1}
                       alt={item.name}
-                      loading="lazy"
+                     
                       className="rounded-xl w-full h-full "
                     />
                     <div className="absolute w-full h-full bg-black/35 top-0 left-0  hover:bg-transparent transition-all duration-300"></div>

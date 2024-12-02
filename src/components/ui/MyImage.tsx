@@ -17,7 +17,7 @@ const MyImage = () => {
     <>
       <div className="relative w-full flex items-center justify-center mt-[50px] max-lg:hidden ">
         <div className="w-[300px] h-auto relative z-30">
-          <Image src={myImage} alt="myimage" width={300} height={300} loading="lazy" />
+          <Image src={myImage} alt="myimage" width={300} height={300}  />
         </div>
         <span
           className={twMerge(
