@@ -10,20 +10,19 @@ import typescript from "../../assets/typescript.svg";
 import javascript from "../../assets/logo-javascript.svg";
 import antd from "../../assets/ant-design.svg";
 import tailwind from "../../assets/pngwing.com.png";
-import { light } from "@mui/material/styles/createPalette";
 
 const MyImage = () => {
   const { theme } = useThemeStore();
   return (
     <>
       <div className="relative w-full flex items-center justify-center mt-[50px] max-lg:hidden ">
-        <div className="w-[300px] h-auto relative z-50">
-          <Image src={myImage} alt="myimage" width={300} height={300} />
+        <div className="w-[300px] h-auto relative z-30">
+          <Image src={myImage} alt="myimage" width={300} height={300} loading="lazy" />
         </div>
         <span
           className={twMerge(
             " absolute flex items-center gap-x-4 p-2 rounded-full top-[10px] left-[30%] max-sm:left-[10%] ",
-            theme === "light" ? " bg-[#ffc107]" : "bg-white"
+            theme === "light" ? "bg-white border  shadow-lg" : "bg-white"
           )}
         >
           <Image
@@ -36,7 +35,7 @@ const MyImage = () => {
           <p
             className={twMerge(
               ` font-bold max-sm:hidden ${
-                theme === "light" ? "text-white" : "text-black"
+                theme === "light" ? "text-black" : "text-black"
               }`
             )}
           >
@@ -46,7 +45,7 @@ const MyImage = () => {
         <span
           className={twMerge(
             " absolute flex items-center gap-x-4 p-2 rounded-full top-[40%] left-[15%] max-sm:left-0 ",
-            theme === "light" ? " bg-[#ffc107]" : "bg-white"
+            theme === "light" ? "bg-white border shadow-lg" : "bg-white"
           )}
         >
           <Image
@@ -59,7 +58,7 @@ const MyImage = () => {
           <p
             className={twMerge(
               ` font-bold max-sm:hidden ${
-                theme === "light" ? "text-white" : "text-black"
+                theme === "light" ? "text-black" : "text-black"
               }`
             )}
           >
@@ -69,7 +68,7 @@ const MyImage = () => {
         <span
           className={twMerge(
             " absolute flex items-center gap-x-4 p-2 rounded-full bottom-[10px] left-[25%] max-sm:left-[10%]",
-            theme === "light" ? " bg-[#ffc107]" : "bg-white"
+            theme === "light" ? "bg-white border shadow-lg" : "bg-white"
           )}
         >
           <Image
@@ -82,7 +81,7 @@ const MyImage = () => {
           <p
             className={twMerge(
               ` font-bold max-sm:hidden ${
-                theme === "light" ? "text-white" : "text-black"
+                theme === "light" ? "text-black" : "text-black"
               }`
             )}
           >
@@ -92,7 +91,7 @@ const MyImage = () => {
         <span
           className={twMerge(
             " absolute flex items-center gap-x-4 p-2 rounded-full top-[10px] right-[25%] max-sm:right-[10%]",
-            theme === "light" ? " bg-[#ffc107]" : "bg-white"
+            theme === "light" ? "bg-white border shadow-lg " : "bg-white"
           )}
         >
           <Image
@@ -105,7 +104,7 @@ const MyImage = () => {
           <p
             className={twMerge(
               ` font-bold  max-sm:hidden ${
-                theme === "light" ? "text-white" : "text-black"
+                theme === "light" ? "text-black" : "text-black"
               }`
             )}
           >
@@ -115,7 +114,7 @@ const MyImage = () => {
         <span
           className={twMerge(
             " absolute flex items-center gap-x-4 p-2 rounded-full top-[40%] right-[15%]  max-sm:right-0",
-            theme === "light" ? " bg-[#ffc107]" : "bg-white"
+            theme === "light" ? "bg-white border shadow-lg" : "bg-white"
           )}
         >
           <Image
@@ -128,7 +127,7 @@ const MyImage = () => {
           <p
             className={twMerge(
               ` font-bold  max-sm:hidden  ${
-                theme === "light" ? "text-white" : "text-black"
+                theme === "light" ? "text-black" : "text-black"
               }`
             )}
           >
@@ -138,7 +137,7 @@ const MyImage = () => {
         <span
           className={twMerge(
             " absolute flex items-center gap-x-4 p-2 rounded-full bottom-[10px] right-[20%] max-sm:right-[10%] ",
-            theme === "light" ? " bg-[#ffc107]" : "bg-white"
+            theme === "light" ? "bg-white border shadow-lg" : "bg-white"
           )}
         >
           <Image
@@ -151,7 +150,7 @@ const MyImage = () => {
           <p
             className={twMerge(
               ` font-bold  max-sm:hidden ${
-                theme === "light" ? "text-white" : "text-black"
+                theme === "light" ? "text-black" : "text-black"
               }`
             )}
           >

@@ -19,6 +19,25 @@
   --text-color: var(--text-color-dark);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc107;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -30,6 +49,3 @@ body {
   margin: 0 auto;
   padding-inline: 20px;
 }
-
-
-

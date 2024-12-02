@@ -7,12 +7,13 @@ import avatar from "../../../assets/avatar.svg";
 import Link from "next/link";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { hobbies } from "@/constants/tools";
+import { Link as Scroll } from "react-scroll";
 
 const About = () => {
   const { theme } = useThemeStore();
 
   return (
-    <section className="pt-[100px]">
+    <section className="pt-[100px]" id="about">
       <div className="container">
         <div className="flex flex-col gap-y-6">
           <h1
@@ -87,7 +88,9 @@ const About = () => {
             <div
               className={twMerge(
                 " p-10 rounded-3xl",
-                theme === "light" ? "bg-neutral-100" : "bg-neutral-800/60"
+                theme === "light"
+                  ? "bg-neutral-100"
+                  : "bg-neutral-800 text-zinc-400 hover:text-zinc-100"
               )}
             >
               <p className="text-xl ">
@@ -109,17 +112,28 @@ const About = () => {
                 JavaScript frameworks and libraries such as:
               </p>
             </div>
-            <button
+
+            <Scroll
               className={twMerge(
                 "flex items-center gap-x-4 px-10 py-4 rounded-full font-bold ",
                 theme === "light"
                   ? "bg-neutral-200 text-black border border-black hover:bg-black hover:text-[#ffc107] transition-all"
                   : " bg-[#ffc107]/10 border border-[#ffc107] text-[#ffc107]  hover:bg-[#ffc107] hover:text-black transition-all"
               )}
+              activeClass="active"
+              to="contacts"
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={-100}
+              duration={1000}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+              spyThrottle={500}
             >
               <IoIosPhonePortrait size={30} />
               Contact Me
-            </button>
+            </Scroll>
           </div>
         </div>
       </div>

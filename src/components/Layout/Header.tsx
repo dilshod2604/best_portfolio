@@ -4,12 +4,15 @@ import ThemeButton from "../ui/ThemeButton";
 import { useThemeStore } from "@/store/useThemeButton";
 import { twMerge } from "tailwind-merge";
 import BurgerMenu from "../ui/BurgerMenu";
-import Image from "next/image";
+import {
+  MdOutlineArrowBackIos,
+  MdOutlineArrowForwardIos,
+} from "react-icons/md";
 
 const Header = () => {
   const { theme } = useThemeStore();
   return (
-    <header className="mt-[30px]">
+    <header className=" fixed w-full py-[40px] z-50 backdrop-blur-xl top-0">
       <div className="container">
         <div
           className={twMerge(
@@ -18,14 +21,10 @@ const Header = () => {
             }`
           )}
         >
-          <div className="w-[50px] h-[50px] rounded-full bg-[#ffc107] overflow-hidden">
-            <Image
-              src="/logo.svg"
-              alt="logo"
-              width={40}
-              height={40}
-              className="w-full h-full object-cover"
-            />
+          <div className=" w-[100px]  flex items-senter gap-x-1">
+            <MdOutlineArrowBackIos size={40} className="text-[#ffc107]" />
+            <p className="text-[#ffc107] text-[25px] font-bold">D</p>
+            <MdOutlineArrowForwardIos size={40} className="text-[#ffc107]" />
           </div>
 
           <div className="flex items-center gap-x-3">

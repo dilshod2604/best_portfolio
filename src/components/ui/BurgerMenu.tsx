@@ -1,5 +1,6 @@
 import { useThemeStore } from "@/store/useThemeButton";
 import { Button, IconButton, Menu, MenuItem } from "@mui/material";
+import { Link } from "react-scroll";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import BurgerButton from "./SvgUi/BurgerSvg";
@@ -12,6 +13,7 @@ const BurgerMenu = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -69,7 +71,23 @@ const BurgerMenu = () => {
                 },
               }}
             >
-              {links.name}
+              <Link
+                key={links.href}
+                className="nav_links"
+                activeClass="active"
+                to={links.href}
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-100}
+                duration={500}
+                isDynamic={true}
+                onClick={handleClose}
+                ignoreCancelEvents={false}
+                spyThrottle={500}
+              >
+                {links.name}
+              </Link>
             </MenuItem>
           ))}
         </Menu>

@@ -1,41 +1,34 @@
 interface MenuLink {
   name: string;
+  href: string;
 }
 export const menuLinks: MenuLink[] = [
   {
     name: "Home",
+    href: "home",
   },
   {
     name: "About Me",
-  },
-  {
-    name: "Testimonials",
+    href: "about",
   },
   {
     name: "Education",
+    href: "education",
   },
   {
     name: "Experience",
-  },
-  {
-    name: "Cetificates",
+    href: "experience",
   },
   {
     name: "Projects I've Worked On",
-  },
-  {
-    name: "Buy Me a Coffee",
-  },
-  {
-    name: "Discuss Project",
-  },
-  {
-    name: "Social Media",
+    href: "projects",
   },
   {
     name: "Contact Me",
+    href: "contacts",
   },
   {
     name: "Portfolio Made With",
+    href: "portfolio",
   },
 ];

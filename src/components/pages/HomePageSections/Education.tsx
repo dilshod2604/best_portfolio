@@ -8,9 +8,9 @@ import { twMerge } from "tailwind-merge";
 const Education = () => {
   const { theme } = useThemeStore();
   return (
-    <section className="my-[100px]">
+    <section className="my-[100px]" id="education">
       <div className="container">
-        <div className="w-full flex flex-col  gap-y-4">
+        <div className="w-full flex flex-col  gap-y-4 ">
           <h1
             className={twMerge(
               " font-black text-[50px] w-full text-center",
@@ -31,7 +31,7 @@ const Education = () => {
                     : "bg-neutral-100"
                 )}
               >
-                <div className="flex flex-col gap-y-6 max-sm:items-center">
+                <div className="flex flex-col gap-y-6 max-sm:items-center ">
                   <div className="flex items-center gap-x-5 group max-sm:flex-col gap-y-4">
                     <span className="flex items-center justify-center px-5 py-3 rounded-full text-2xl w-[200px]  bg-black text-[#ffc107] font-bold">
                       {item.date}

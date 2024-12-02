@@ -1,11 +1,13 @@
+"use client";
 import MyImage from "@/components/ui/MyImage";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { BsDownload } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Welcome = () => {
   return (
-    <section>
+    <section id="homee">
       <div className="container">
         <div className="w-full flex flex-col items-center pt-[50px] gap-y-[40px]">
           <span className="flex items-center gap-x-2 px-4 py-4 rounded-full border border-[#ffc107] text-3xl bg-[#ffc107]/10">
@@ -48,13 +50,30 @@ const Welcome = () => {
             </span>
           </div>
           <div className="flex items-center gap-x-4 max-sm:flex-col max-sm:gap-y-4">
-            <button className="flex items-center gap-x-4 px-[40px] py-4  text-2xl text-[#ffc107] font-bold border border-[#ffc107] rounded-full bg-[#ffc107]/10 hover:bg-[#ffc107] hover:text-black transition-all ">
+            <a
+              href="/pdf/dilshodadilbekov_CV"
+              download
+              className="flex items-center gap-x-4 px-[40px] py-4  text-2xl text-[#ffc107] font-bold border border-[#ffc107] rounded-full bg-[#ffc107]/10 hover:bg-[#ffc107] hover:text-black transition-all "
+            >
               <BsDownload size={30} />
               Download CV
-            </button>
-            <button className="flex items-center justify-between px-[40px] py-4  text-2xl text-black font-bold border border-[#ffc107]  rounded-full bg-[#ffc107] hover:bg-[#ffc107]/10 hover:text-[#ffc107] transition-all ">
+            </a>
+            
+            <Link
+              className="flex items-center justify-between px-[40px] py-4 cursor-pointer  text-2xl text-black font-bold border border-[#ffc107]  rounded-full bg-[#ffc107] hover:bg-[#ffc107]/10 hover:text-[#ffc107] transition-all "
+              activeClass="active"
+              to="contacts"
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={-100}
+              duration={1000}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+              spyThrottle={500}
+            >
               Hire Me
-            </button>
+            </Link>
           </div>
 
           <MyImage />
